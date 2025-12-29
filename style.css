@@ -209,39 +209,33 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.partners {
-  padding: 80px 50px;
-  text-align: center;
+@media (max-width: 768px) {
+  .partners {
+    padding: 60px 16px;
+  }
+
+  .partners h2 {
+    font-size: 26px;
+  }
+
+  .partners p {
+    font-size: 13px;
+  }
+
+  .partners-marquee {
+    overflow: hidden;
+  }
+
+  .partners-track {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .partners-track img {
+    height: 34px;
+  }
 }
 
-.partners h2 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
-.partners p {
-  font-size: 14px;
-  opacity: 0.75;
-  margin-bottom: 40px;
-}
-
-.partners-marquee {
-  overflow: hidden;
-  width: 100%;
-}
-
-.partners-track {
-  display: flex;
-  gap: 60px;
-  width: max-content;
-  animation: partnerScroll 45s linear infinite;
-}
-
-.partners-track img {
-  height: 46px;
-  filter: grayscale(100%) opacity(0.75);
-  transition: 0.3s;
-}
 
 .partners-track img:hover {
   filter: grayscale(0%) opacity(1);
@@ -253,24 +247,19 @@ button[type="submit"] {
   to { transform: translateX(-50%); }
 }
 
-.contact {
-  padding: 80px 50px;
-  text-align: center;
-}
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 16px;
+  }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
-  max-width: 900px;
-  margin: auto;
-}
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 
-.contact-card {
-  background: var(--card);
-  padding: 28px;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  .contact-card {
+    text-align: center;
+  }
 }
 
 .contact-card span {
@@ -280,17 +269,17 @@ button[type="submit"] {
 }
 
 .map {
-  width: 100%;
-  padding: 40px 0;
-  background: var(--bg);
+  padding: 60px 16px;
 }
 
 .map iframe {
   width: 100%;
-  height: 320px;
-  border-radius: 16px;
-  border: 0;
+  height: 280px;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
 }
+
 
 @media (max-width: 768px) {
   .map iframe {
@@ -403,5 +392,26 @@ button[type="submit"] {
     width: 30px;
     height: 30px;
     font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .left-space h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .page-layout {
+    padding: 0 18px;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    margin-bottom: 60px;
   }
 }
