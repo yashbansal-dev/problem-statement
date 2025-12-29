@@ -342,3 +342,14 @@ button[type="submit"] {
     padding: 60px 20px;
   }
 }
+@media (max-width: 600px) {
+  .left-space h2 {
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+
+  .left-space .description {
+    margin-top: 8px;
+  }
+}
+
