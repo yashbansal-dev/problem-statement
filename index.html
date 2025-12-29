@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HackJKLU 5.0 – Problem Submission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<header class="top-header">
+  <div class="header-left">
+    <img src="logo.png" alt="HackJKLU Logo" class="header-logo">
+  </div>
+
+  <div class="header-right">
+    <span class="brand-text">HackJKLU 5.0</span>
+
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      🌙
+    </button>
+  </div>
+</header>
+
+
+
+
+<main class="page-layout">
+
+  <section class="left-space">
+    
+
+    <h2>Build. Innovate.<br>Compete for Glory.</h2>
+
+    <p class="description">
+      A 36-hour on-campus hackathon where industry leaders and student innovators
+      collaborate to solve real-world challenges.
+    </p>
+
+    <div class="stats-strip">
+      <div><strong>₹2,00,000</strong><span>Prize Pool</span></div>
+      <div><strong>13–15</strong><span>March</span></div>
+      <div><strong>Offline</strong><span>Mode</span></div>
+      <div><strong>JKLU</strong><span>Venue</span></div>
+    </div>
+
+    <div class="timeline">
+      <div><span>Day 1</span><p>Kickoff & Ideation</p></div>
+      <div><span>Day 2</span><p>Build & Mentorship</p></div>
+      <div><span>Day 3</span><p>Demo's & Evaluation</p></div>
+    </div>
+
+    <div class="countdown">
+      <div><strong id="d">0</strong><span>Days</span></div>
+      <div><strong id="h">0</strong><span>Hours</span></div>
+      <div><strong id="m">0</strong><span>Minutes</span></div>
+      <div><strong id="s">0</strong><span>Seconds</span></div>
+    </div>
+  </section>
+
+  <section class="right-form">
+    <h3>Submit Problem Statement</h3>
+
+    <form id="problemForm">
+      <input name="company" placeholder="Company Name" required>
+      <input name="email" type="email" placeholder="Company Email" required>
+      <input 
+        name="contact_phone" 
+        type="tel" 
+        placeholder="Contact Number" 
+        pattern="[0-9]{10}" 
+        required
+      >
+      <input name="title" placeholder="Problem Title" required>
+      <textarea name="statement" placeholder="Problem Statement" required></textarea>
+      <button type="submit">Submit Problem</button>
+    </form>
+  </section>
+
+</main>
+
+<section class="partners">
+  <h2>Previous Partners & Ecosystem Support</h2>
+  <p>This ecosystem backing reinforces event credibility and scale.</p>
+
+  <div class="partners-marquee">
+    <div class="partners-track">
+
+      <img src="logos/ention.png" alt="Ention">
+      <img src="logos/wscube.png" alt="WS Cube Tech">
+      <img src="logos/devfolio.png" alt="Devfolio">
+      <img src="logos/ethindia.png" alt="ETHIndia">
+      <img src="logos/balsamiq.png" alt="Balsamiq">
+      <img src="logos/geeksforgeeks.png" alt="GeeksforGeeks">
+      <img src="logos/blockpen.png" alt="BlockPen">
+      <img src="logos/fluxor.png" alt="Fluxor">
+
+      <img src="logos/ention.png" alt="Ention">
+      <img src="logos/wscube.png" alt="WS Cube Tech">
+      <img src="logos/devfolio.png" alt="Devfolio">
+      <img src="logos/ethindia.png" alt="ETHIndia">
+      <img src="logos/balsamiq.png" alt="Balsamiq">
+      <img src="logos/geeksforgeeks.png" alt="GeeksforGeeks">
+      <img src="logos/blockpen.png" alt="BlockPen">
+      <img src="logos/fluxor.png" alt="Fluxor">
+
+    </div>
+  </div>
+</section>
+
+
+<section class="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Pratigya Bomb</h3>
+      <p>Problem Statement Core</p>
+      <span onclick="copyText('+916264667506')">📞 +91 62646 67506</span>
+      <span onclick="copyText('pratigyabomb@jklu.edu.in')">pratigyabomb@jklu.edu.in</span>
+    </div>
+
+    <div class="contact-card">
+      <h3>Shourya Bansal</h3>
+      <p>Tech & Support Core</p>
+      <span onclick="copyText('+919024877439')">📞 +91 90248 77439</span>
+      <span onclick="copyText('shouryabansal@jklu.edu.in')">shouryabansal@jklu.edu.in</span>
+    </div>
+
+    <div class="contact-card">
+      <h3>Agrima Kesari</h3>
+      <p>Hospitality Core</p>
+      <span onclick="copyText('+917992054194')">📞 +91 79920 54194</span>
+      <span onclick="copyText('agrima@jklu.edu.in')">agrima@jklu.edu.in</span>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <iframe
+    src="https://www.google.com/maps?q=JK+Lakshmipat+University&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer class="footer">
+  © 2026 HackJKLU • JK Lakshmipat University
+  <a href="#top" class="back-to-top">⬆</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
