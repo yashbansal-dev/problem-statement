@@ -29,14 +29,16 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
+  justify-content: space-between;
+
+  padding: 14px 18px;
   background: var(--card);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
+
 
 .header-logo {
   height: 42px;
@@ -45,16 +47,19 @@ body {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
+
 .brand-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.1px;
   color: var(--gold);
   white-space: nowrap;
 }
+
 
 .theme-toggle {
   width: 38px;
@@ -378,5 +383,25 @@ button[type="submit"] {
 
   .stats-strip strong {
     font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .top-header {
+    padding: 10px 14px;
+  }
+
+  .header-logo {
+    height: 30px;
+  }
+
+  .brand-text {
+    font-size: 13px;
+    letter-spacing: 0.6px;
+  }
+
+  .theme-toggle {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
   }
 }
