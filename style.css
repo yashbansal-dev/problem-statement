@@ -274,11 +274,25 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.map {
+  width: 100%;
+  padding: 40px 0;
+  background: var(--bg);
+}
+
 .map iframe {
   width: 100%;
-  height: 350px;
+  height: 320px;
+  border-radius: 16px;
   border: 0;
 }
+
+@media (max-width: 768px) {
+  .map iframe {
+    height: 260px;
+  }
+}
+
 
 .footer {
   text-align: center;
@@ -340,5 +354,29 @@ button[type="submit"] {
 
   .contact {
     padding: 60px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .brand-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .header-logo {
+    height: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .left-space h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .stats-strip strong {
+    font-size: 16px;
   }
 }
