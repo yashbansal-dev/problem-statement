@@ -1,5 +1,5 @@
 const API_URL =
-  "https://script.google.com/macros/s/AKfycbyULO60ooRcJuTcu853GaaxlrMqiGfhTAaB7RLUUTwg4VCwOr9cxrkF1EB_YMi_J0d_rA/exec";
+  "https://script.google.com/macros/s/AKfycbzP4Cslfhv506Nc-giwDLuyhJfcP7nkNd_txc-nAsuv6oKl2PwGEY6yCwFpxNSvoWlq3g/exec";
 
 function toggleTheme() {
   document.body.classList.toggle("dark");
